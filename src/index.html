@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>rocktech.pl</title>
+        <link rel="profile" href="http://microformats.org/profile/hcard" />
+        <meta name="description" content="Projekty informatyczne, dokładnie jak ty chcesz">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="favicon.ico">
+        <!-- build:css css/app.min.css -->
+        <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/app.css">
+        <!-- endbuild -->
+        <!-- build:js js/app.min.js -->
+        <script src="bower_components/angular/angular.js" type="text/javascript"></script>
+        <script src="bower_components/angular-aria/angular-aria.js" type="text/javascript"></script>
+        <script src="bower_components/angular-route/angular-route.js" type="text/javascript"></script>
+        <script src="app/app.js" type="text/javascript"></script>
+        <!-- endbuild -->
+    </head>
+    <body ng-app="rockApp" ng-controller="RockCtrl">
+        <nav id="nav" role="navigation">
+            <ul>
+                <li><a ng-href="/#index">Index</a></li>
+                <li><a ng-href="/#uslugi">Usługi</a></li>
+                <li><a ng-href="/#referencje">Referencje</a></li>
+                <li><a ng-href="/#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+        <header id="header">
+            <hgroup>
+                <h1>rocktech</h1>
+                <h2>rozwiązania informatyczne</h2>
+            </hgroup>
+        </header>
+        <section id="main" role="main">
+            <article id="content" role="article" ng-view>
+
+            </article>
+            <aside id="aside">
+                <nav>
+                    <h4>Produkty</h4>
+                    <ul>
+                        <li><a ng-click="scrollTo('cms', 'index')">CMS</a></li>
+                        <li><a ng-click="scrollTo('typo3', 'index')">TYPO3</a></li>
+                        <li><a ng-click="scrollTo('responsive', 'index')">Responsywny szablon</a></li>
+                        <li><a ng-click="scrollTo('accessibility', 'index')">Dostępna treść</a></li>
+                        <li><a ng-click="scrollTo('apps', 'index')">Aplikacje na zamówienie</a></li>
+                    </ul>
+                    <h4>Usługi</h4>
+                    <ul>
+                        <li><a ng-click="scrollTo('audyt', 'uslugi')">Audyt informatyczny</a></li>
+                        <li><a ng-click="scrollTo('administracja', 'uslugi')">Administracja serwerami</a></li>
+                        <li><a ng-click="scrollTo('outsourcing', 'uslugi')">Outsourcing IT</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </section>
+        <footer id="footer">
+            <p>
+                &copy; 2009 - 2015 Rocktech 
+                <a href="https://plus.google.com/u/0/+RafałZielonkaBombaharris/" class="social fa fa-google-plus" title="Profil Google+"></a> 
+                <a href="https://twitter.com/Bombaharris" class="social fa fa-twitter" title="Profil Twitter"></a> 
+                <a href="https://github.com/Bombaharris" class="social fa fa-github" title="Profil Github"></a>
+            </p>
+        </footer>
+    </body>
+</html>
