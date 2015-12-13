@@ -66,7 +66,10 @@ html {
     background-position: bottom;
     background-attachment: fixed;
     background-size:cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     padding: (@white-space) 0 (@white-space) 0;
+    border-top: (@white-space / 36) solid @secondary-color;
     border-bottom: (@white-space / 8) solid @secondary-color;
     .animation-scroll();
     hgroup {
@@ -223,7 +226,7 @@ html {
                 li {
                     border-bottom:1px solid @secondary-color;
                     a {
-                        color:darken(@secondary-color,20%);
+                        color:lighten(@heading-color,15%);
                         padding: (@white-space / 4) (@white-space / 4) (@white-space / 4) 0;
                         display:block;
                         text-decoration: none;

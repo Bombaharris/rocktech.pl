@@ -373,7 +373,10 @@ html {
   background-position: bottom;
   background-attachment: fixed;
   background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   padding: 4rem 0 4rem 0;
+  border-top: 0.11111111rem solid #E7EEF3;
   border-bottom: 0.5rem solid #E7EEF3;
   -webkit-animation: backgroundScroll 20s linear 1;
   animation: backgroundScroll 20s linear 1;
@@ -591,7 +594,7 @@ html {
   border-bottom: 1px solid #E7EEF3;
 }
 #main #aside nav ul li a {
-  color: #a3bed1;
+  color: #3884bf;
   padding: 1rem 1rem 1rem 0;
   display: block;
   text-decoration: none;
