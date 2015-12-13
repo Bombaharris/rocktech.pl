@@ -4,5 +4,5 @@
 Description
 -----------
 
-Source code of [[rocktech.pl](http://rocktech.pl/) site.
+Source code of [rocktech.pl](http://rocktech.pl/) site.
 
