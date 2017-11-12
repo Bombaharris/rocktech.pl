@@ -3,8 +3,8 @@
 @import "mixins.less";
 @import "reset.less";
 @import "variables.less";
-@import "typography.less"; 
-@import "animations.less"; 
+@import "typography.less";
+@import "animations.less";
 
 /**************************************/
 /*              COLOR SCHEME          */
@@ -61,7 +61,7 @@ html {
 #header {
     position: relative;
     background-color: @heading-color;
-    background-image: url(/img/mac_bg.jpg);
+    background-image: url(/img/launch_bg.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
@@ -76,16 +76,16 @@ html {
         width: @container-width;
         margin: 0 auto;
         h1 {
-
-            color: @heading-color;
+            color: white;
             font-family: @font-family-light;
             margin-bottom: (@white-space / 8);
+            text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
         }
         h2 {
-
-            color: @heading-color;
+            color: white;
             font-family: @font-family-light;
             margin-bottom: 0;
+            text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
         }
         @media (max-width: @bp-larger-than-tablet) {
             width: 95%;
